@@ -24,6 +24,7 @@ services:
       - ./infra/otel/otel-collector-config.yaml:/etc/otel-collector-config.yaml
       - /var/lib/docker/containers:/var/lib/docker/containers:ro
     user: "0" # Strong no!
+    restart: on-failure
     depends_on:
       - clickhouse
       - loki
