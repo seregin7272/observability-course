@@ -27,3 +27,5 @@ go.work.sum
 .idea
 
 myenv/
+
+.DS_Store
